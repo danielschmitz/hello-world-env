@@ -12,7 +12,10 @@ export default {
   name: 'App',
   components: {
     HelloWorld
-  }
+  },
+  mounted() {
+    console.log(`Working on '${process.env.VUE_APP_MODE}' mode`)
+  },
 }
 </script>
 
